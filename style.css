@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Poppins:wght@400;600&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  background-color: #16161a;
+  color: #f0f0f0;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.filters {
+  background-color: #0101015f;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+#search-input {
+  padding: 10px 14px;
+  margin-top: 25px;
+  border-radius: 12px;
+  border: 1px solid #ffffff;
+  background-color: #16161a;
+  color: #f0f0f0;
+  max-width: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+
+.filters select {
+  width: 100%;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #ffffff;
+  background-color: #16161a;
+  color: #f0f0f0;
+  box-sizing: border-box;
+}
+
+#price-filter {
+  width: 100%;
+}
+
+h3 {
+  font-family: "Orbitron", sans-serif;
+  font-weight: 600;
+}
+
+.store-container {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+#product-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.product-card {
+  border: 2px solid #ccc;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #010101;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+  border: 2px solid #7f5af0;
+}
+
+.product-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+.stars-bar {
+  width: 100%;
+  height: 12px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  margin: 10px 0;
+  overflow: hidden;
+}
+
+.stars-fill {
+  height: 100%;
+  background-color: #2cb67d;
+  border-radius: 5px 0 0 5px;
+  transition: width 0.3s ease;
+}
+
+footer {
+  background-color: #0101015f;
+  text-align: center;
+  padding: 20px;
+}
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.footer-content a {
+  color: #f5b301;
+  text-decoration: none;
+}
+
+.footer-content a:hover {
+  text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+  .footer-content {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+  }
+}
+
+@media (max-width: 768px) {
+  .store-container {
+    grid-template-columns: 1fr;
+  }
+
+  .filters {
+    order: 1;
+    margin-bottom: 20px;
+  }
+
+  #product-gallery {
+    order: 2;
+  }
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Store</title>
+    <link rel="icon" href="./assets/favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Poppins:wght@400;600&display=swap"
+        rel="stylesheet">
+    <script src="games.js" defer></script>
+    <script src="main.js" defer></script>
+
+</head>
+
+<body>
+
+    <section class="store-container">
+        <aside class="filters">
+
+            <a href="#" class="logo">
+                <img src="./assets/logo.png">
+            </a>
+            <input type="text" id="search-input" placeholder="Search games...">
+            <h2>Filters</h2>
+
+            <h3>Platform</h3>
+            <select id="platform-filter">
+                <option value="all">All</option>
+                <option value="pc">PC</option>
+                <option value="ps4">PS4</option>
+                <option value="ps5">PS5</option>
+                <option value="xbox one">Xbox One</option>
+                <option value="xbox series x/s">Xbox Series X/S</option>
+                <option value="nintendo switch">Nintendo Switch</option>
+                <option value="mobile">Mobile</option>
+            </select>
+
+            <h3>Seller</h3>
+            <select id="seller-filter">
+                <option value="all">All</option>
+                <option value="Bandai Namco">Bandai Namco</option>
+                <option value="Bethesda">Bethesda</option>
+                <option value="CD Projekt Red">CD Projekt Red</option>
+                <option value="Crystal Dynamics">Crystal Dynamics</option>
+                <option value="Eidos-Montréal">Eidos-Montréal</option>
+                <option value="Electronic Arts">Electronic Arts</option>
+                <option value="Epic Games">Epic Games</option>
+                <option value="Gameloft">Gameloft</option>
+                <option value="Guerrilla Games">Guerrilla Games</option>
+                <option value="Insomniac Games">Insomniac Games</option>
+                <option value="Mediatonic">Mediatonic</option>
+                <option value="Mojang Studios">Mojang Studios</option>
+                <option value="NetEase Games">NetEase Games</option>
+                <option value="Nintendo">Nintendo</option>
+                <option value="PSYONIX">Psyonix</option>
+                <option value="Respawn Entertainment">Respawn Entertainment</option>
+                <option value="Riot Games">Riot Games</option>
+                <option value="Rockstar Games">Rockstar Games</option>
+                <option value="Santa Monica Studio">Santa Monica Studio</option>
+                <option value="TiMi Studio Group">TiMi Studio Group</option>
+            </select>
+
+            <h3>Max Price</h3>
+            <input type="range" id="price-filter" min="0" max="100" step="5" value="100">
+            <span id="price-value">100€</span>
+
+        </aside>
+        <main id="product-gallery">
+
+        </main>
+
+    </section>
+
+    <footer>
+        <div class="footer-content">
+
+            <p>All rights reserved &copy; 2025 Game Store</p>
+
+            <div>
+                <p>Contact:
+                    <a href="https://github.com/SMQ56" target="_blank">GitHub</a> |
+                    <a href="mailto:sufyanmq06@gmail.com">Email</a>
+                </p>
+
+            </div>
+
+            <div>
+                <p>Powered by Sufyan</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
